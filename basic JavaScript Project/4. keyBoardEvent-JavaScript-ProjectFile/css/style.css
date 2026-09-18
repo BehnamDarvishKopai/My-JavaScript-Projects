@@ -1,0 +1,75 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #050508;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    .keyboard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 24px 16px;
+      border-radius: 16px;
+      background: #0d0d10;
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.04),
+        0 20px 60px rgba(0,0,0,0.5);
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+    }
+
+    /* .row:nth-child(2) { padding-left: 28px; }
+    .row:nth-child(3) { padding-left: 56px; } */
+
+    .key {
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      background: linear-gradient(180deg, #1a1a20 0%, #131318 100%);
+      color: #c8c8d0;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.08),
+        inset 0 -1px 0 rgba(0,0,0,0.4),
+        0 2px 4px rgba(0,0,0,0.4),
+        0 0 0 1px rgba(255,255,255,0.03);
+      transition: all 0.08s ease-out;
+    }
+
+    /* .key:hover {
+      background: linear-gradient(180deg, #1e1e26 0%, #17171e 100%);
+      color: #ffffff;
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.12),
+        inset 0 -1px 0 rgba(0,0,0,0.3),
+        0 3px 6px rgba(0,0,0,0.5),
+        0 0 0 1px rgba(255,255,255,0.05);
+      transform: translateY(-1px);
+    } */
+
+    /* .key:active {
+      background: linear-gradient(180deg, #111116 0%, #0e0e12 100%);
+      transform: translateY(1px);
+      box-shadow:
+        inset 0 2px 4px rgba(0,0,0,0.5),
+        inset 0 -1px 0 rgba(255,255,255,0.02),
+        0 1px 2px rgba(0,0,0,0.3);
+      color: #a0a0a8;
+    } */

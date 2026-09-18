@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 0;
+  height: 100vh;
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: width 0.5s;
+}
+
+.sidebar h2 {
+  text-align: center;
+  padding: 30px;
+  color: #999;
+}
+
+.ctrlbtn {
+  font-size: 25px;
+  margin: 20px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.close::after {
+  content: "\002716 close";
+}
+.open::after {
+  content: "\002630 open";
+}
+.show {
+  width: 250px;
+}

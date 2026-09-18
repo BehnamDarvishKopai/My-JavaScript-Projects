@@ -1,0 +1,50 @@
+/* Accordion Button */
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.active , .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion::after {
+          content: '\00276F';
+          transform: rotate(90deg);
+          color: #777;
+          font-weight: bold;
+          float: right;
+          margin-left: 5px;
+          transition: all 0.5s;
+}
+
+.active:after {
+          content: '\00276F';
+          transform: rotate(270deg);
+          
+}
+
+
+/* Panel Content */
+.panel{
+    padding: 0 18px;
+    background-color: rgb(248, 207, 130);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+

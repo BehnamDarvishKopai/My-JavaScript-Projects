@@ -1,0 +1,57 @@
+/* Combined styles from all snippets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d1d1d;
+  font-family: sans-serif;
+  flex-direction: column;
+  gap: 20px;
+}
+
+p#number {
+  text-align: center;
+  color: #fff;
+  font-size: 100px;
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  width: 70px;
+  border: 0;
+  outline: 0;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+
+button:first-of-type {
+  border-color: red;
+}
+
+button:last-of-type {
+  border-color: green;
+}
+
+button:hover {
+  color: rgb(236, 154, 2);
+  opacity: 1;
+}
